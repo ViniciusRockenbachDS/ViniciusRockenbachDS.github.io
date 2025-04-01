@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travis Showroom</title>
+    <link rel="icon" href="https://ae01.alicdn.com/kf/Aae33abcdf8184a9cb6d90fcca978407bj.jpg" type="image/x-icon">
+    <style>
+        /* Estilização geral */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: rgb(150, 88, 17);
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        /* Estilização da galeria */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .album {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: #1e1e1e;
+            padding: 10px;
+            border-radius: 10px;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+
+        .album img {
+            width: 150px;
+            height: 150px;
+            border-radius: 10px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .album:hover {
+            transform: translateY(-5px);
+        }
+
+        .album:hover img {
+            transform: scale(1.05);
+        }
+
+        .album p {
+            margin-top: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #bbb;
+            transition: color 0.3s ease;
+        }
+
+        .album:hover p {
+            color: #ffffff;
+        }
+
+        /* Responsividade */
+        @media (max-width: 600px) {
+            .gallery {
+                flex-direction: column;
+                align-items: center;
+            }
+
+        }
+        .botao-voltar {
+        display: inline-block;
+        background-color: #462012; /* Cor dourada */
+        color: rgb(255, 255, 255);
+        padding: 12px 24px;
+        margin-top: 20px;
+        margin-left: 5px; /* Ajuste conforme necessário */
+        border-radius: 8px;
+        font-size: 18px;
+        font-weight: bold;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        box-shadow: 0 4px 8px rgba(255, 255, 255, 0.5);
+    }
+
+    .botao-voltar:hover {
+        background-color: #573811; /* Laranja ao passar o mouse */
+        transform: scale(1.05);
+        box-shadow: 0 6px 12px rgba(255, 255, 255, 0.7);
+    }
+
+
+        .botao-vershows{
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 24px;
+            background-color: #ffffff;
+            color: rgb(70, 32, 15);
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 8px;
+            transition: background 0.3s, transform 0.2s;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.5);
+        }
+        .butaonvershows:hover {
+            background-color: #000000;
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgb(255, 255, 255);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Travis Showroom-Alguns albums de Travis 🎵</h1>
+
+    <div class="gallery">
+        <div class="album">
+            <a href="https://open.spotify.com/album/18NOKLkZETa4sWwLMIm0UZ?si=PgVbnazETNynrXA0BSYUdA" target="_blank">
+                <img src="https://m.media-amazon.com/images/I/51nMgSxPQeL._UF894,1000_QL80_.jpg" alt="UTOPIA">
+            </a>
+            <p>UTOPIA</p>
+        </div>
+        
+        <div class="album">
+            <a href="https://open.spotify.com/intl-pt/album/42WVQWuf1teDysXiOupIZt?si=NICQds26TcW_eZIadlC11A" target="_blank">
+                <img src="https://m.media-amazon.com/images/I/719VyXR5BrL._UF894,1000_QL80_.jpg" alt="Birds in the Trap Sing McKnight">
+            </a>
+            <p>Birds in the Trap</p>
+        </div>
+        
+        <div class="album">
+            <a href="https://open.spotify.com/intl-pt/album/41GuZcammIkupMPKH2OJ6I?si=UQzueeRZRkSOrr9v_SCTEA" target="_blank">
+                <img src="https://m.media-amazon.com/images/I/81nFF-rXdRL._UF1000,1000_QL80_.jpg" alt="Astroworld">
+            </a>
+            <p>Astroworld</p>
+        </div>
+        
+        <div class="album">
+            <a href="https://open.spotify.com/album/4PWBTB6NYSKQwfo79I3prg?si=3ltT5ScJRTGB39OOOfAtog" target="_blank">
+                <img src="https://i.scdn.co/image/ab67616d0000b2736cfd9a7353f98f5165ea6160" alt="Rodeo">
+            </a>
+            <p>Rodeo</p>
+        </div>
+        
+        <div class="album">
+            <a href="https://open.spotify.com/album/6FED8aeieEnUWwQqAO9zT1?si=IZCAMbaxSXyStY6FdMI1Yw" target="_blank">
+                <img src="https://cdn-images.dzcdn.net/images/cover/6f18c8d5bdd7b675856c86163bed7f10/0x1900-000000-80-0-0.jpg" alt="Huncho Jack">
+            </a>
+            <p>Huncho Jack</p>
+        </div>
+        
+        <div class="album">
+            <a href="https://open.spotify.com/album/1Sf8GsXG32t0jNrX11xqWx?si=c-rh70qvT8ik525yKGXY5Q" target="_blank">
+                <img src="https://i.scdn.co/image/ab67616d0000b273dfc2f59568272de50a257f2f" alt="JackBoys">
+            </a>
+            <p>JackBoys</p>
+        </div>
+        
+        <div class="album">
+            <a href="https://open.spotify.com/album/54Y471E7GNBSOXjZtqONId?si=AqaZNrzCQ1yA37pBXmHdlw" target="_blank">
+                <img src="https://i1.sndcdn.com/artworks-000088468287-jju25j-t1080x1080.jpg" alt="Days Before Rodeo">
+            </a>
+            <p>Days Before Rodeo</p>
+        </div>
+        
+        <div class="album">
+            <a href="https://www.youtube.com/watch?v=8SMTJmB0ARE" target="_blank">
+                <img src="https://i1.sndcdn.com/artworks-000048622882-92hn84-t500x500.jpg" alt="Owl Pharaoh">
+            </a>
+            <p>Owl Pharaoh</p>
+        </div>
+        
+    </div>
+
+    <button class="botao-voltar" onclick="window.location.href='projeto travis.html';">
+        🔙voltar
+       </button>
+       <button class="botao-voltar" onclick="window.location.href='grade de shows.html';">
+        Ver Proximos Shows de Travis Scoot
+       </button>
+</body>
+</html>
