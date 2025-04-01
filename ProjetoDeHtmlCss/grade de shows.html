@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travis Shows</title>
+    <link rel="icon" href="https://s2-g1.glbimg.com/7Q0ke-aDXPTMhWi3QTsd7IXQZJg=/0x0:1700x1065/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2021/x/A/OzQGZXQEumyxS0hCElag/festival.jpg" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: rgb(255, 254, 254);
+            text-align: center;
+            margin: 20px;
+            background-image: url('https://lorena.r7.com/public/assets/img/galeria-imagens/Travis-Scott-festival-Astroworld-AP.jpg'); /* Imagem de fundo do show */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .overlay {
+            background: rgba(0, 0, 0, 0.7); /* Adiciona um efeito escuro para melhor legibilidade */
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+        .shows-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 10px;
+            max-width: 800px;
+            margin: auto;
+            background: rgba(0, 0, 0, 0.6); /* Fundo semitransparente */
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .header {
+            background-color: #000000;
+            font-weight: bold;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .show-item {
+            background-color: #222;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .show-item:nth-child(even) {
+            background-color: #333;
+        }
+        .show-item:hover {
+            background-color: #ff4500;
+        }
+        .back-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 24px;
+            background-color: #5f3015;
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 8px;
+            transition: background 0.3s, transform 0.2s;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.5);
+        }
+        .back-button:hover {
+            background-color: #000000;
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgb(255, 255, 255);
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Proximos shows de travis scoot</h1>
+    <div class="shows-grid">
+        <div class="header">Data</div>
+        <div class="header">Cidade</div>
+        <div class="header">Local</div>
+        <div class="header">Artista</div>
+        
+        <div class="show-item">21/05/2025</div>
+        <div class="show-item">Orlando</div>
+        <div class="show-item">Show Park</div>
+        <div class="show-item">Travis Scott</div>
+
+        <div class="show-item">25/05/2025</div>
+        <div class="show-item">California</div>
+        <div class="show-item">Studio Park</div>
+        <div class="show-item">Travis Scoot</div>
+
+        <div class="show-item">29/05/2025</div>
+        <div class="show-item">Fkorida</div>
+        <div class="show-item">Space music</div>
+        <div class="show-item">Travis Scoot</div>
+
+        <div class="show-item">02/06/2025</div>
+        <div class="show-item">Washington</div>
+        <div class="show-item">Music arena</div>
+        <div class="show-item">Travis Scoot</div>
+
+        <div class="show-item">15/06/2025</div>
+        <div class="show-item">Rio de janeiro-Brazil</div>
+        <div class="show-item">Rock in rio arena</div>
+        <div class="show-item">Travis scoot</div>
+    </div>
+    <a href="projeto travis.html" class="back-button">Voltar ao site</a>
+</body>
+</html>
