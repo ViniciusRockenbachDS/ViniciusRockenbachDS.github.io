@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estilo Trap</title>
+  <link rel="icon" href="https://p2.trrsf.com/image/fget/cf/774/0/images.terra.com/2023/04/19/migos-reproducao-1jxzgn4up7f3l.png" type="image/x-icon">
+  <!-- Importando fontes para um visual mais impactante -->
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* Reset básico e estilos globais */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Roboto', sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+      transition: background-color 0.3s ease, font-size 0.3s ease;
+      padding: 20px;
+    }
+    .container {
+      max-width: 800px;
+      width: 100%;
+      padding: 20px;
+      border-radius: 10px;
+      background: rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(10px);
+      color: #fff;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    }
+    h1 {
+      font-family: 'Anton', sans-serif;
+      margin-bottom: 20px;
+      font-size: 2.5rem;
+    }
+    p {
+      margin-bottom: 20px;
+      font-size: 1.2rem;
+      line-height: 1.5;
+    }
+    .botao {
+      display: inline-block;
+      padding: 12px 30px;
+      font-size: 1rem;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+      color: #fff;
+    }
+    .botao:hover {
+      opacity: 0.9;
+    }
+    .imagem {
+      margin-top: 20px;
+      width: 100%;
+      max-width: 400px;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+    .imagem:hover {
+      transform: scale(1.05);
+    }
+
+    /* Media Queries para responsividade */
+    /* Para telas menores que 600px */
+    @media (max-width: 599px) {
+      body {
+        background-color: rgb(255, 0, 0);
+        font-size: 14px;
+        flex-direction: column;
+      }
+      .botao {
+        background-color: darkred;
+      }
+      .imagem {
+        display: none; /* Oculta a imagem */
+      }
+    }
+
+    /* Para telas entre 600px e 900px */
+    @media (min-width: 600px) and (max-width: 899px) {
+      body {
+        background-color: rgb(0, 0, 0);
+        font-size: 18px;
+        flex-direction: column;
+      }
+      .botao {
+        background-color: rgb(80, 48, 18);
+      }
+      .imagem {
+        display: block; /* Exibe a imagem */
+      }
+    }
+
+    /* Para telas maiores que 900px */
+    @media (min-width: 900px) {
+      body {
+        background-color: rgba(110, 43, 23, 0.856);
+        font-size: 22px;
+        flex-direction: row;
+      }
+      .botao {
+        background-color: rgb(0, 0, 0);
+      }
+      .imagem {
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Play list de trap</h1>
+    <p>Mergulhe no universo do Trap, com as melhores músicas, com os maiores artistas do mundo; Travis Scoot, Drake e muito mais.</p>
+    <a href="https://www.youtube.com/watch?v=FrsOnNxIrg8&list=PLLutm1jwjCRfkkgKa-x8oEVnYeqnyfhsk" class="botao">Ouça Agora❗</a>
+    <img src="https://thebackstage-deezer.com/wp-content/uploads/2023/11/trap-1000x600.jpeg" alt="Imagem Trap" class="imagem">
+    <a href="MenuDropdown.html" class="botao voltar">Voltar</a>
+    <a href="TabelaDeDiscos.html" class="botao voltar">Ver discos</a>
+  </div>
+</body>
+</html>
